@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+<h2>Работы</h2>
+{% for job in jobs %}
+<h3>Job #{{ job.id }}</h3>
+<table>
+    <tr>
+        <td>Название</td>
+        <td>Ответственный</td>
+        <td>Часы</td>
+        <td>Команда</td>
+        <td>Завершена</td>
+        <td>Категории</td>
+    </tr>
+
+    <tr>
+        <td>{{ job.job }}</td>
+        <td>{{ job.leader.surname }} {{ job.leader.name }}</td>
+        <td>{{ job.work_size }}</td>
+        <td>{{ job.collaborators }}</td>
+        <td>{{ job.is_finished }}</td>
+        <td>{% for cat in job.categories %} {{ cat.title }} {% endfor %}</td>
+    </tr>
+</table>
+{% if current_user.is_authenticated and (job.team_leader == current_user.id or
+current_user.id == 1) %}
+<a href="/edit_job/{{ job.id }}">Изменить</a>
+<a href="/delete_job/{{ job.id }}">Удалить</a>
+{% endif %} {% endfor %} {% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<h2>Департаменты</h2>
+
+{% if current_user.is_authenticated %}
+<a href="/add_department">Добавить</a>
+{% endif %}
+
+<ul>
+    {% for dep in departments %}
+    <li>
+        {{ dep.title }}
+        <a href="/edit_department/{{ dep.id }}">Изменить</a>
+        <a href="/delete_department/{{ dep.id }}">Удалить</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
