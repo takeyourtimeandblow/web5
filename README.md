@@ -24,10 +24,12 @@
 <img width="629" height="347" alt="image" src="https://github.com/user-attachments/assets/7dee2af5-09eb-460d-b732-ca37c583034a" />
 
 Добавление нового:
+
 <img width="627" height="577" alt="image" src="https://github.com/user-attachments/assets/8c334211-ea0b-42f2-a586-421c2fc92020" />
 <img width="627" height="214" alt="image" src="https://github.com/user-attachments/assets/0f595f88-27f3-42c0-afdb-7dd4bb56476c" />
 
 Формы изменения:
+
 <img width="652" height="576" alt="image" src="https://github.com/user-attachments/assets/62be6a0f-485c-4f7f-8e70-a9923ba4ff59" />
 <img width="652" height="576" alt="image" src="https://github.com/user-attachments/assets/feb69c84-aaa8-44f3-9e7f-de97f8e0caca" />
 
